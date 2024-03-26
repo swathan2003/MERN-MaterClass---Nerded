@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Customer Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional CSS for gym name */
+        .gym-name {
+            font-size: 54px;
+            color: #040404; /* Black color */
+            margin-bottom: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Gym Name -->
+        <div class="gym-name">Fitness Freak Gym</div>
+    </header>
+    <div class="container">
+        <!-- Gym Image -->
+        <img src="C:\Users\swath\Downloads\gymImage.jpeg" alt="Gym" class="gym-image">
+        
+        <form id="customerForm">
+            <h2>Add New Customer</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" required>
+            <label for="membershipType">Membership Type:</label>
+            <select id="membershipType" required>
+                <option value="monthly">Monthly</option>
+                <option value="yearly">Yearly</option>
+                <option value="daily">Daily</option>
+            </select>
+            <button type="submit">Add Customer</button>
+        </form>
+        <div id="customerList">
+            <h2>Customer List</h2>
+            <ul id="list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
